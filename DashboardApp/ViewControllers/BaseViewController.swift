@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BaseViewController.swift
 //  DashboardApp
 //
 //  Created by Prateek's mac mini on 03/09/20.
@@ -8,13 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+enum collectionViewCellTypes: CaseIterable {
+    case pieChart
+    case columnChart
+    case pickImage
+}
+
+
+class BaseViewController: UIViewController {
+    
+    //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
+
+
 
